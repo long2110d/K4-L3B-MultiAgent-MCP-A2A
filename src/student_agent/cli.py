@@ -61,7 +61,7 @@ async def _run(root: Path) -> None:
 
 
 def parser() -> argparse.ArgumentParser:
-    result = argparse.ArgumentParser(description="Day09 L3B student workflow")
+    result = argparse.ArgumentParser(description="Day09 L3A student workflow")
     result.add_argument("--root", default=".", help="repository root (default: current directory)")
     commands = result.add_subparsers(dest="command", required=True)
     commands.add_parser("validate-inputs", help="validate case-set.json and all 100 inputs")
